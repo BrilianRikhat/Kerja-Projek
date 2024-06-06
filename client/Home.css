@@ -1,0 +1,88 @@
+/* Remove default margins and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", helvetica;
+    font-size: 15px;
+    font-weight: 300;
+}
+   
+   /* Set background image or color */
+   body {
+    background-image: url('https://img.freepik.com/free-vector/halftone-background-with-circles_23-2148907689.jpg?w=740&t=st=1702385761~exp=1702386361~hmac=eb54ddfc8842203b23dcd269ad17f81e14337059dee6ec9787967aad97cf9e8a');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+   }
+
+   
+   nav {
+    position: relative;
+   }
+
+h1 {
+    color: #ffff;
+}
+
+h2 {
+    color: #ffff;
+    font-size: 20;
+}
+
+.p-separator {
+  color: #ffff;
+  font-size: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.container-fluid {
+  height: 0;
+  overflow: hidden;
+  transition: all ease 1s;
+}
+
+.container-fluid.active {
+   height: 80vh;
+}
+
+
+.container-fluid img {
+  animation: Animation 3s infinite alternate;
+}
+
+.container-fluid h1, .container-fluid h2 {
+  animation: animationtext 3s infinite alternate;
+}
+
+.invisible-button {
+  opacity: 0;
+  /* Menambahkan transisi agar tombol terlihat ketika dihover */
+  transition: opacity 0.3s ease;
+}
+
+/* .invisible-button:hover { */
+  /* opacity: 0; Menyesuaikan kebutuhan Anda */
+/* } */
+
+
+
+@keyframes Animation {
+  0% {transform: translate(0);}
+  25% {transform: translate(42px, 18px);}
+  50% {transform: translate(-2.1rem, -2ex);} 
+  75% {transform: translateY(-20px);}
+  100% {transform: translateY(20px);}
+}
+
+
+@keyframes animationtext {
+   0% {
+    transform: translateY(0px);
+   } 50%{
+    transform: translateY(-10px);
+   } 100% {
+    transform: translateY(10px);
+   }
+}

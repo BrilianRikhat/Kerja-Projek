@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+ <a class="navbar-brand" href="Home.html">Brilian Rikhat</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+ </button>
+ <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/skills">Skills</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/portofolio">Portfolio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/contact">Contact</a>
+    </li>
+    <li class="nav-item invisible-button">
+      <a class="nav-link" href="/login">ADMIN</a>
+    </li>
+  </ul>
+ </div>
+</nav>
+
+<section id="project">
+    <!--heading--------------->
+    <div class="project-heading">
+      <span>Let's See My project</span>
+      <h3>Portfolio</h3>
+    </div>
+
+  <!--container--------->
+  <div class="portfolio-container">
+    <!--1------------>
+    <a href="https://i.ytimg.com/vi/Xp4S4KMxYJA/maxresdefault.jpg" class="portfolio-box app" data-lightbox="work">
+
+      <img alt="" src="https://i.ytimg.com/vi/Xp4S4KMxYJA/maxresdefault.jpg">
+      <h4>Program Kalkulator</h4>
+    </a>
+    <!--2------------>
+    <a href="https://cdn.dribbble.com/users/2551352/screenshots/9323522/web_1920___1.jpg" class="portfolio-box app" data-lightbox="work">
+      <img alt="" src="https://cdn.dribbble.com/users/2551352/screenshots/9323522/web_1920___1.jpg">
+      <h4>Company Profile</h4>
+    </a>
+    <!--3------------>
+    <a href="https://i.ytimg.com/vi/adIw1vadtp4/maxresdefault.jpg" class="portfolio-box appdesign" data-lightbox="work">
+      <img alt="" src="https://i.ytimg.com/vi/adIw1vadtp4/maxresdefault.jpg">
+      <h4>Program Tiket Bioskop</h4>
+    </a>
+    <!--4------------>
+    <a href="ihttps://uicookies.com/wp-content/uploads/2018/08/coloshop-free-responsive-ecommerce-website-templates.jpg" class="portfolio-box web" data-lightbox="work">
+      <img alt="" src="https://uicookies.com/wp-content/uploads/2018/08/coloshop-free-responsive-ecommerce-website-templates.jpg">
+      <h4>Company Profile</h4>
+    </a>
+    <!--5------------>
+    <a href="https://tse1.mm.bing.net/th?id=OIP.d95C0HGZUUJHbDxmxpAFLwHaEA&pid=Api&P=0&h=220" class="portfolio-box web" data-lightbox="work">
+      <img alt="" src="https://tse1.mm.bing.net/th?id=OIP.d95C0HGZUUJHbDxmxpAFLwHaEA&pid=Api&P=0&h=220">
+      <h4>Company Profile</h4>
+    </a>
+    <!--6------------>
+    <a href="https://cdn.dribbble.com/users/1862011/screenshots/11140644/media/958a3082dcb6892f2db76542b48960d9.png" class="portfolio-box ai" data-lightbox="work">
+      <img alt="" src="https://cdn.dribbble.com/users/1862011/screenshots/11140644/media/958a3082dcb6892f2db76542b48960d9.png">
+      <h4>Personal Profile</h4>
+    </a>
+  </div>
+  </section>
+        <script>
+            const img = document.querySelectorAll(".portfolio-container a img");
+            let increment  = 0;
+          
+  let interval =   setInterval(() => {
+           
+          // if (increment < img.length) {
+          //     img[increment].style.animationName = "translate";
+          //     img[increment].style.animationDuration = "1s";
+          //     increment++; 
+          // } else {
+          //   increment = 0;
+          // }
+            img[increment].style.animationName = "translate";
+           img[increment].style.animationDuration = "1s";
+
+        // Increment with wrapping around using modulo
+        console.log(increment = (increment + 1) % img.length);
+          } , 1000);
+
+
+          setTimeout(() => {
+             clearInterval(interval)
+          }, 6000);
+        </script>
+  </body>

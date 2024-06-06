@@ -1,0 +1,98 @@
+.container-feedback {
+    margin-top: 50px;
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+   flex-wrap: wrap;
+  
+ overflow: hidden;
+
+}
+
+
+
+
+.container-feedback .box {
+    width: 40%;
+    height: 200px;
+        /* From https://css.glass */
+    background: rgba(137, 133, 133, 0.36);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    left: 100%;
+    transition: 2s ease all;
+}
+
+.container-feedback .box.activeBox {
+   left: 0;
+}
+
+.container-feedback .box #nama {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.container form {
+    margin-top: 30px;
+    position: relative;
+    left: 120%;
+    transition: all ease 1s;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+.container {
+    overflow: hidden;
+    margin
+}
+
+.container h2 {
+    animation: animationtext 3s infinite alternate;
+}
+
+.invisible-button {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* .invisible-button:hover {
+    opacity: 0.5; 
+} */
+
+
+
+
+@keyframes animationtext {
+    0% {
+     transform: translateY(0px);
+    } 50%{
+     transform: translateY(-10px);
+    } 100% {
+     transform: translateY(10px);
+    }
+ }
+
